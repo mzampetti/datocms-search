@@ -267,4 +267,11 @@ DatoCmsSearch.prototype.addWidget = function startWidget(selector, props) {
   );
 }
 
+DatoCmsSearch.prototype.removeWidget = function destroyWidget(selector) {
+  Inferno.render(
+    null,
+    document.querySelector(selector)
+  );
+}
+
 module.exports = DatoCmsSearch;
